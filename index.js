@@ -28,6 +28,9 @@ function Phrase(content) {
     //     theLetters.push(char);
     //   }      
     // });
-    return Array.from(this.content).filter(c => c.match(/[a-zA-Z]/i)).join("");
+
+    //return Array.from(this.content).filter(c => c.match(/[a-zA-Z]/i)).join("");
+
+    return (this.content.match(/[a-z]/gi) || []).join("");
   }
 }
